@@ -41,7 +41,7 @@ function App() {
           .filter((item) => {
             return search.toLowerCase() === ""
               ? item
-              : item.name.common.toLowerCase().includes(search);
+              : item.name.common.toLowerCase().includes(search.toLowerCase());
           })
           .map((country) => (
             <div key={country.cca3} className="countryCard">
